@@ -1,0 +1,40 @@
+{
+  "entities": {
+    "users": {
+      "title": "Users",
+      "description": "Platform users including customers, artisans, and administrators.",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "email": { "type": "string" },
+        "full_name": { "type": "string" },
+        "phone": { "type": "string" },
+        "role": { "type": "string" },
+        "walletBalance": { "type": "number" },
+        "escrowHeld": { "type": "number" },
+        "campusHub": { "type": "string" },
+        "avatar": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["uid", "email", "role"]
+    },
+    "jobs": {
+      "title": "Jobs and Deliveries",
+      "description": "Campus dispatch orders, task requests, and artisan assignments.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "customerId": { "type": "string" },
+        "providerId": { "type": "string" },
+        "title": { "type": "string" },
+        "pickup": { "type": "string" },
+        "dropoff": { "type": "string" },
+        "status": { "type": "string" },
+        "amount": { "type": "number" },
+        "otpCode": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "customerId", "status", "amount"]
+    }
+  }
+}

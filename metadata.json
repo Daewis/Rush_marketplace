@@ -1,0 +1,6 @@
+{
+  "name": "Rush Merchant",
+  "description": "Campus and hyper-local marketplace for vetted artisans, technicians, and service providers with bidding, escrow wallet, GPS check-in OTP, and accountability center.",
+  "requestFramePermissions": ["geolocation", "camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
